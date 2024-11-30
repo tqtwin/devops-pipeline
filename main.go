@@ -14,7 +14,11 @@ func main() {
 			"message": "Hello, Gin!",
 		})
 	})
-
+	router.GET("/hello", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "Hello, Vip!",
+		})
+	})
 	// Chạy server tại cổng 8080
 	router.Run(":4000")
 }
