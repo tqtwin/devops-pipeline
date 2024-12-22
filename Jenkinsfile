@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/tqtwin/devops'
+                git branch: 'main', url: 'https://github.com/tqtwin/devops-pipeline.git'
             }
         }
 
