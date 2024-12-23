@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'thangtran081003/server_golang'
+        DOCKER_IMAGE = 'thangtran081003/final'
         DOCKER_TAG = 'latest'
         TELEGRAM_BOT_TOKEN = '7762232009:AAG_ZEbgmcu9geLKA7tbxcrDsDwAmnutRMY'
         TELEGRAM_CHAT_ID = '1924675693'
