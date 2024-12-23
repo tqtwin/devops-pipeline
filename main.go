@@ -16,7 +16,7 @@ func main() {
 	})
 	router.GET("/hello", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"message": "Hello,helloo!",
+			"message": "Hello12",
 		})
 	})
 	// Chạy server tại cổng 8080

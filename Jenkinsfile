@@ -42,11 +42,11 @@ pipeline {
         stage('Deploy Golang to DEV') {
             steps {
                 echo 'Deploying to DEV...'
-                sh 'docker image pull thangtran081003/server_golang:latest'
-                sh 'docker container stop server_golang || echo "this container does not exist"'
+                sh 'docker image pull thangtran081003/final:latest'
+                sh 'docker container stop final || echo "this container does not exist"'
                 sh 'docker network create dev || echo "this network exists"'
                 sh 'echo y | docker container prune '
-                sh 'docker container run -d --rm --name server-golang -p 4000:4000 --network dev thangtran081003/server_golang:latest'
+                sh 'docker container run -d --rm --name server-golang -p 4000:4000 --network dev thangtran081003/final:latest'
             }
         }
     }
